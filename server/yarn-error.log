@@ -1,0 +1,49 @@
+Arguments: 
+  D:\Arquivos de Programas (x86)\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add cors
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Arquivos de Programas (x86)\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\dotnet\;C:\Users\giova\AppData\Local\Microsoft\WindowsApps;;D:\Arquivos de Programas (x86)\Microsoft VS Code\bin;C:\Users\giova\AppData\Roaming\npm;C:\Users\giova\AppData\Local\Yarn\bin;C:\Users\giova\.dotnet\tools
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\Giovanni\codes\NLW\server\node_modules\sqlite3\lib\binding\napi-v3-win32-x64\node_sqlite3.node'
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+      "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+      "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback"
+    },
+    "devDependencies": {
+      "@types/cors": "^2.8.7",
+      "@types/express": "^4.17.7",
+      "@types/node": "^14.0.27",
+      "ts-node-dev": "^1.0.0-pre.56",
+      "typescript": "^3.9.7"
+    },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "knex": "^0.21.2",
+      "sqlite3": "^5.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
